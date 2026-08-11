@@ -5,6 +5,7 @@ import {
   Cpu,
   Gauge,
   LayoutDashboard,
+  MemoryStick,
   Rocket,
   Server,
   ShieldCheck,
@@ -274,6 +275,24 @@ function Plans() {
             </Link>{" "}
             and we&apos;ll build a plan around you.
           </p>
+        </Reveal>
+
+        <Reveal delay={300} className="mt-6">
+          <div className="mx-auto flex max-w-2xl items-center justify-center gap-3 rounded-xl border border-dashed border-primary/40 bg-primary/5 px-5 py-4 text-sm text-muted-foreground">
+            <MemoryStick className="size-4 shrink-0 text-primary" />
+            <span>
+              Need more memory to test?{" "}
+              <Link
+                href="https://dash.aetherlyn.lol/account/tickets"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-primary hover:underline"
+              >
+                Write us a ticket
+              </Link>{" "}
+              for a free additional swap RAM.
+            </span>
+          </div>
         </Reveal>
       </div>
     </section>
