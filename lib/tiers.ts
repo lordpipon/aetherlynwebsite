@@ -6,6 +6,7 @@ export interface Tier {
   disk: string;
   icon: string;
   accent: string;
+  price: string;
   comingSoon?: boolean;
   recommended?: boolean;
   free?: boolean;
@@ -20,6 +21,7 @@ export const tiers: Tier[] = [
     disk: "10 GB",
     icon: "https://oldaetherlynweb.vercel.app/assets/icons/free.svg",
     accent: "#64748b",
+    price: "€0",
     free: true,
   },
   {
@@ -30,6 +32,7 @@ export const tiers: Tier[] = [
     disk: "20 GB",
     icon: "https://oldaetherlynweb.vercel.app/assets/icons/iron.svg",
     accent: "#94a3b8",
+    price: "€1.99",
     recommended: true,
   },
   {
@@ -40,6 +43,7 @@ export const tiers: Tier[] = [
     disk: "30 GB",
     icon: "https://oldaetherlynweb.vercel.app/assets/icons/gold.svg",
     accent: "#fbbf24",
+    price: "€2.99",
   },
   {
     name: "Diamond",
@@ -49,6 +53,7 @@ export const tiers: Tier[] = [
     disk: "40 GB",
     icon: "https://oldaetherlynweb.vercel.app/assets/icons/diamond.svg",
     accent: "#38bdf8",
+    price: "€4.99",
   },
   {
     name: "Amethyst",
@@ -58,6 +63,7 @@ export const tiers: Tier[] = [
     disk: "50 GB",
     icon: "https://oldaetherlynweb.vercel.app/assets/icons/amethyst.svg",
     accent: "#a78bfa",
+    price: "Coming Soon",
     comingSoon: true,
   },
   {
@@ -68,6 +74,7 @@ export const tiers: Tier[] = [
     disk: "60 GB",
     icon: "https://oldaetherlynweb.vercel.app/assets/icons/netherite.svg",
     accent: "#9ca3af",
+    price: "Coming Soon",
     comingSoon: true,
   },
 ];

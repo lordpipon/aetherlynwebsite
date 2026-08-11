@@ -82,6 +82,14 @@ export function TierCard({ tier, index }: { tier: Tier; index: number }) {
           </div>
           <CardTitle className="text-xl">{tier.name}</CardTitle>
         </div>
+        <div className="mt-3 flex items-baseline gap-1">
+          <span className="text-3xl font-extrabold tracking-tight">
+            {tier.price}
+          </span>
+          {!tier.free && !tier.comingSoon && (
+            <span className="text-sm text-muted-foreground">/ month</span>
+          )}
+        </div>
         <CardDescription className="min-h-10">{tier.tagline}</CardDescription>
       </CardHeader>
 
