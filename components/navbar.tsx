@@ -49,13 +49,10 @@ export function Navbar() {
           href="/"
           className="group flex items-center gap-2 text-lg font-bold tracking-tight"
         >
-          <span className="relative flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-lg shadow-primary/30 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-            <Activity className="size-4" />
-          </span>
           <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
             Aetherlyn
           </span>
-          <span className="hidden text-sm font-medium text-muted-foreground sm:inline">
+          <span className="hidden text-sm font-bold text-muted-foreground sm:inline">
             Hosting
           </span>
         </Link>
